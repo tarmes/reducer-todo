@@ -13,7 +13,7 @@ function App() {
         <h1>To-Do List</h1>
         <TodoForm />
       </div>
-      <TodoList toDoList={toDoList}/>
+      <TodoList toDoList={toDoList} dispatch={dispatch}/>
     </div>
   );
 }
