@@ -17,7 +17,7 @@ export default function TodoForm(props) {
     }
 
     const addTask = e => {
-        e.preventDefaul()
+        e.preventDefault()
         dispatch({ type: "ADD_NEW_TASK", payload: newTask})
         setNewTask(initialNewTask)
     }

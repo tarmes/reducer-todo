@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <div className='header'>
         <h1>To-Do List</h1>
-        <TodoForm />
+        <TodoForm dispatch={dispatch}/>
       </div>
-      <TodoList toDoList={toDoList} dispatch={dispatch}/>
+      <TodoList toDoList={toDoList}/>
     </div>
   );
 }
